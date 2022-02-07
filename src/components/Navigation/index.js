@@ -2,14 +2,14 @@ import React from "react";
 
 function Navigation(props) {
     const {
-        // contactSelected,
-        // setContactSelected,
-        // portfolioSelected,
-        // setPortfolioSelected,
-        // aboutSelected,
-        // setAboutSelected,
-        // resumeSelected,
-        // setResumeSelected
+        contactSelected,
+        setContactSelected,
+        portfolioSelected,
+        setPortfolioSelected,
+        aboutSelected,
+        setAboutSelected,
+        resumeSelected,
+        setResumeSelected,
         currentPage,
         setCurrentPage
     } = props;
@@ -23,18 +23,18 @@ function Navigation(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className={`mx-2`}>
+                    <li className={`mx-2 ${aboutSelected && 'navActive'}`}>
                         <span onClick={() => setCurrentPage('about')}>About Me
                         </span>
                     </li>
-                    <li className={`mx-2`}>
+                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                         <span onClick={() => setCurrentPage('contact')}>Contact</span>
                     </li>
-                    <li cclassName={`mx-2`}>
+                    <li cclassName={`mx-2 ${portfolioSelected && 'navActive'}`}>
                         <span onClick={() => setCurrentPage('portfolio')}>Portfolio
                         </span>
                     </li>
-                    <li className={`mx-2`}>
+                    <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
                         <span onClick={() => setCurrentPage('resume')}>Resume
                         </span>
                     </li>
