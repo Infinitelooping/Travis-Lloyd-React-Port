@@ -24,16 +24,16 @@ const ProjectList = () => {
     {
       name: 'Run Buddy',
       id: 2,
-      liveSite: "https://github.com/Infinitelooping/run-buddy",
+      liveSite: "https://infinitelooping.github.io/run-buddy/",
       description: 'Front end using HTML, and CSS for an exercise service.',
       github: "https://github.com/Infinitelooping/run-buddy"
     },
     {
-      name: 'Just Tech News',
+      name: 'Code Quiz',
       id: 3,
-      liveSite: "https://github.com/Infinitelooping/just-tech-news-Travis-Lloyd",
+      liveSite: "https://infinitelooping.github.io/Travis-Lloyd-Code-Quiz/",
       description: 'A place to post tech new for others to read and comment on.',
-      github: "https://github.com/Infinitelooping/just-tech-news-Travis-Lloyd"
+      github: "https://github.com/Infinitelooping/Travis-Lloyd-Code-Quiz"
     },
     {
       name: 'Zoo Keepr',
@@ -62,7 +62,7 @@ const ProjectList = () => {
         <div>
           <h4>{image.name}</h4>
           <p>{image.description}</p>
-          <a href={image.github}>Check out on Github</a>
+          <a class="project-git-link" href={image.github}>Check out on Github</a>
           <a href={image.liveSite}>
             <img
               src={require(`../../assets/small/${image.id}.jpg`)}

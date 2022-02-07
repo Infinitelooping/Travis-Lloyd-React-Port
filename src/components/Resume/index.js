@@ -9,14 +9,14 @@ return (
         <h2>Full Stack Web-Developer</h2>
         <h3>My Skills:</h3>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Databases: SQL, MogoDB, graphQL</li>
-            <li>React</li>
-            <li>MERN</li>
+            <li class="resume-list">HTML</li>
+            <li class="resume-list">CSS</li>
+            <li class="resume-list">JavaScript</li>
+            <li class="resume-list">Databases: SQL, MogoDB, graphQL</li>
+            <li class="resume-list">React</li>
+            <li class="resume-list">MERN</li>
         </ul>
-        <a href= '../../assets/resume/resume.pdf'>See Resume Here </a>
+        <a class="project-git-link" href= '../../assets/resume/resume.pdf'>See Resume Here</a>
     </div>
   );
 };

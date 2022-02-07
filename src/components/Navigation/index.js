@@ -2,14 +2,6 @@ import React from "react";
 
 function Navigation(props) {
     const {
-        contactSelected,
-        setContactSelected,
-        portfolioSelected,
-        setPortfolioSelected,
-        aboutSelected,
-        setAboutSelected,
-        resumeSelected,
-        setResumeSelected,
         currentPage,
         setCurrentPage
     } = props;
@@ -18,25 +10,25 @@ function Navigation(props) {
         <div className="flex-row px-1">
             <h2>
                 <a data-testid="link" href="/">
-                    <span role="img" aria-label="camera"></span>My Portfolio
+                    <span role="img" aria-label="camera"></span>My Portfolio: Travis Lloyd
                 </a>
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className={`mx-2 ${aboutSelected && 'navActive'}`}>
+                    <li className={`mx-2 ${currentPage === 'about' && 'navActive'}`}>
                         <span onClick={() => setCurrentPage('about')}>About Me
                         </span>
                     </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setCurrentPage('contact')}>Contact</span>
-                    </li>
-                    <li cclassName={`mx-2 ${portfolioSelected && 'navActive'}`}>
+                    <li className={`mx-2 ${currentPage === 'portfolio' && 'navActive'}`}>
                         <span onClick={() => setCurrentPage('portfolio')}>Portfolio
                         </span>
                     </li>
-                    <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
+                    <li className={`mx-2 ${currentPage === 'resume' && 'navActive'}`}>
                         <span onClick={() => setCurrentPage('resume')}>Resume
                         </span>
+                    </li>
+                    <li className={`mx-2 ${currentPage === 'contact' && 'navActive'}`}>
+                        <span onClick={() => setCurrentPage('contact')}>Contact</span>
                     </li>
                 </ul>
             </nav>

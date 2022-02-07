@@ -4,8 +4,10 @@ function Footer() {
 
     return (
         <footer className="flex-row px-1 footer">
-            <h3>Welcome to my Site: Travis Lloyd</h3>
+            <h3>Thank you for visiting</h3>
+            <div>
             <a href = "https://github.com/">Github: Infinitelooping</a>
+            </div>
         </footer>
     );
 }

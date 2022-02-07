@@ -16,7 +16,7 @@ function App() {
       return <About></About>
     } else if (currentPage === 'resume') {
       return <Resume></Resume>
-    } else {
+    } else if (currentPage === 'portfolio') {
       return <Project></Project>
     }
   }

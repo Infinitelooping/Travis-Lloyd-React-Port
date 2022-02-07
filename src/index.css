@@ -81,15 +81,6 @@ p {
   margin-top: 0;
 }
 
-.footer {
-  background-color: rgb(50,100,100);
-  position: fixed;
-  bottom: 0px;
-  height: 75px;
-  width: 100%;
-  opacity: 80%;
-}
-
 
 a {
   color: var(--darker);
@@ -292,7 +283,7 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--darker);
+	color: white;
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;
@@ -317,4 +308,25 @@ a {
   display: block;
   width: 300px;
   height: 250px;
+  margin-top: 25px;
+}
+
+.footer {
+  background-color: rgb(50,100,100);
+  position: fixed;
+  display: block;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  opacity: 80%;
+  color: white;
+}
+
+.project-git-link {
+  color: rgb(50,100,100);
+  font-size: 24px;
+}
+
+.resume-list {
+  margin-bottom: 10px;
 }
