@@ -5,13 +5,13 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: black;
+  --secondary: teal;
+  --tertiary: rgb(50,100,50);
   --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
-  --error: rgb(228, 46, 1);
+  --dark: rgb(50,50,50);
+  --darker: rgb(50,100,100);
+  --error: rgb(120, 15, 100);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -81,8 +81,18 @@ p {
   margin-top: 0;
 }
 
+.footer {
+  background-color: rgb(50,100,100);
+  position: fixed;
+  bottom: 0px;
+  height: 75px;
+  width: 100%;
+  opacity: 80%;
+}
+
+
 a {
-  color: var(--tertiary);
+  color: var(--darker);
   text-decoration: none;
   font-weight: bold;
 }
@@ -92,7 +102,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--darker);
 }
 
 header a {
@@ -161,7 +171,7 @@ nav  li {
 textarea {
 	width: 600px;
 	height: 120px;
-	border: 3px solid #cccccc;
+	border: 3px solid gray;
 	padding: 5px;
 }
 
@@ -272,7 +282,7 @@ button {
 	background: var(--primary);
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
+	color: var(--darker);
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 600;
@@ -282,7 +292,7 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
+	color: var(--darker);
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;
@@ -292,4 +302,19 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.resume-component {
+  display:block;
+}
+
+.project {
+  display: block;
+  text-align: left;
+}
+
+.img-thumbnail {
+  display: block;
+  width: 300px;
+  height: 250px;
 }

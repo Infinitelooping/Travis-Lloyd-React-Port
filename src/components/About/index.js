@@ -14,7 +14,7 @@ function About() {
             I enjoy outdoors, but I live for movies and at the end of a long days work hanging out with my wife, and at times playing some video games with close friends. I learn new things hold onto knowledge, and seek to 
                 apply that knowlege not just to work, web-development, but to family and friends relationships as well.
             </p>
-            <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+            <img src={coverImage} className="my-2 cover-image" style={{ width: "100%", height: "50%"}} alt="cover" />
         </section>
     );
 }

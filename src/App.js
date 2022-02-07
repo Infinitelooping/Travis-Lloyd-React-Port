@@ -4,41 +4,34 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Project from './components/Project';
 import Header from './components/Header';
+import Resume from './components/Resume';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState('about');
 
-  const [categories] = useState([
-    { name: 'commercial'},
-    { name: 'portraits'},
-    { name: 'food'},
-    { name: 'landscape'},
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  function pageRender() {
+    if (currentPage === 'contact') {
+      return <ContactForm></ContactForm>
+    } else if (currentPage === 'about') {
+      return <About></About>
+    } else if (currentPage === 'resume') {
+      return <Resume></Resume>
+    } else {
+      return <Project></Project>
+    }
+  }
 
   return (
     <div>
 
       <Header
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}>
+        currentPage = {currentPage}
+        setCurrentPage = {setCurrentPage}>
       </Header>
 
 
       <main>
-        {!contactSelected ? (
-          //if
-          <>
-            <Project></Project>     
-          </>
-          //else
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+        {pageRender()}
       </main>
       <Footer></Footer>
     </div>

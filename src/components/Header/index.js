@@ -1,25 +1,18 @@
-import { capitalizeFirstLetter } from "../../utils/helpers";
 import React from "react";
 import Navigation from "../Navigation"
 
 function Header(props) {
 
     const {
-        categories = [],
-        setCurrentCategory,
-        currentCategory,
-        contactSelected,
-        setContactSelected
+        currentPage,
+        setCurrentPage
     } = props;
 
     return (
         <header className="flex-row px-1">
             <Navigation
-                categories={categories}
-                setCurrentCategory={setCurrentCategory}
-                currentCategory={currentCategory}
-                contactSelected={contactSelected}
-                setContactSelected={setContactSelected}>
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}>
             </Navigation>
         </header>
     );
