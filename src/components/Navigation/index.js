@@ -9,7 +9,7 @@ function Navigation(props) {
     return (
         <div className="flex-row px-1">
             <h2>
-                <a data-testid="link" href="/">
+                <a data-testid="link" href="https://infinitelooping.github.io/Travis-Lloyd-React-Port/">
                     <span role="img" aria-label="camera"></span>My Portfolio: Travis Lloyd
                 </a>
             </h2>
