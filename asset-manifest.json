@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/Travis-Lloyd-React-Port/static/css/main.c76c5ec3.css",
-    "main.js": "/Travis-Lloyd-React-Port/static/js/main.5dbf3f92.js",
+    "main.js": "/Travis-Lloyd-React-Port/static/js/main.657e5ae7.js",
     "static/js/787.aeca62f9.chunk.js": "/Travis-Lloyd-React-Port/static/js/787.aeca62f9.chunk.js",
     "static/media/cover-image.jpg": "/Travis-Lloyd-React-Port/static/media/cover-image.58e100ef9e1ed1e15b02.jpg",
     "static/media/3.jpg": "/Travis-Lloyd-React-Port/static/media/3.6338628d9d55caf412df.jpg",
     "static/media/2.jpg": "/Travis-Lloyd-React-Port/static/media/2.d2cfa9fdc6d32181699f.jpg",
     "static/media/4.jpg": "/Travis-Lloyd-React-Port/static/media/4.eab98ee20407df407c4b.jpg",
+    "static/media/resume.pdf": "/Travis-Lloyd-React-Port/static/media/resume.56c4470e66beaa52bb8a.pdf",
     "static/media/0.jpg": "/Travis-Lloyd-React-Port/static/media/0.30a45d93474c6f6adcdd.jpg",
     "static/media/1.jpg": "/Travis-Lloyd-React-Port/static/media/1.3e3cac2cc2cd9a3661ba.jpg",
     "static/media/5.jpg": "/Travis-Lloyd-React-Port/static/media/5.5bb3d9d516d9f045a557.jpg",
     "index.html": "/Travis-Lloyd-React-Port/index.html",
     "main.c76c5ec3.css.map": "/Travis-Lloyd-React-Port/static/css/main.c76c5ec3.css.map",
-    "main.5dbf3f92.js.map": "/Travis-Lloyd-React-Port/static/js/main.5dbf3f92.js.map",
+    "main.657e5ae7.js.map": "/Travis-Lloyd-React-Port/static/js/main.657e5ae7.js.map",
     "787.aeca62f9.chunk.js.map": "/Travis-Lloyd-React-Port/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c76c5ec3.css",
-    "static/js/main.5dbf3f92.js"
+    "static/js/main.657e5ae7.js"
   ]
 }
