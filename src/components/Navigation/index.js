@@ -10,7 +10,7 @@ function Navigation(props) {
         <div className="flex-row px-1">
             <h2>
                 <a data-testid="link" className={`mx-2 ${currentPage === 'about' && 'navActive'}`}>
-                    <span role="img" aria-label="camera" onClick={() => setCurrentPage('about')} ></span>My Portfolio: Travis Lloyd
+                    <span onClick={() => setCurrentPage('about')} ></span>My Portfolio: Travis Lloyd
                 </a>
             </h2>
             <nav>
