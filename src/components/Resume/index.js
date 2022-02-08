@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import resume from "../../assets/resume/resume.pdf";
 
 const Resume = () => {
 
@@ -16,7 +16,7 @@ return (
             <li class="resume-list">React</li>
             <li class="resume-list">MERN</li>
         </ul>
-        <a class="project-git-link" href= '../../assets/resume/resume.pdf'>See Resume Here</a>
+        <a class="project-git-link" href={resume}>See Resume Here</a>
         
     </div>
   );
