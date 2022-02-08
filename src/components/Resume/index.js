@@ -17,6 +17,7 @@ return (
             <li class="resume-list">MERN</li>
         </ul>
         <a class="project-git-link" href= '../../assets/resume/resume.pdf'>See Resume Here</a>
+        
     </div>
   );
 };

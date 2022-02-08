@@ -9,8 +9,8 @@ function Navigation(props) {
     return (
         <div className="flex-row px-1">
             <h2>
-                <a data-testid="link" className={`mx-2 ${currentPage === 'about' && 'navActive'}`} onClick={() => setCurrentPage('about')}>
-                    My Portfolio: Travis Lloyd
+                <a data-testid="link" className={`mx-2 ${currentPage === 'about' && 'navActive'}`}>
+                    <span onClick={() => setCurrentPage('about')} ></span>My Portfolio: Travis Lloyd
                 </a>
             </h2>
             <nav>
